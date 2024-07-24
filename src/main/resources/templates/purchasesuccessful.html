@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ModGuitar -- Purchase Successful</title>
+    <link rel="stylesheet" href="./css/demo.css">
+</head>
+<body>
+<div class="conf-container">
+    <div class="header-container">
+        <div class="logo-container">
+            <!-- Added a link to mainscreen.html on the logo -->
+            <a th:href="@{/mainscreen}" class="logo-link">
+                <div class="logo">
+                    <!-- Added CSS in /static/css/demo.css -->
+                    <div class="logo-text"><img src="./images/logo-white.png" width="35px"></div>
+                </div>
+            </a>
+            <div class="title-text"><strong>Mod</strong>Guitar</div>
+        </div>
+    </div>
+    <div class="purchase-status">
+        <div class="purchase-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="125" height="125" fill="#00CC99" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+            </svg>
+        </div>
+        Product was purchased successfully!
+    </div>
+    <a th:href="@{/mainscreen}" class="flex-sm-fill text-sm-center nav-link m-2" aria-current="page">Return Home</a>
+</div>
+
+</body>
+</html>
